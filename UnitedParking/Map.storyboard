@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="3LV-pR-RSF">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Map View Controller-->
+        <scene sceneID="y4z-uL-q3u">
+            <objects>
+                <viewController storyboardIdentifier="MapViewController" id="3LV-pR-RSF" customClass="MapViewController" customModule="UnitedParking" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="M8C-qE-G9A"/>
+                        <viewControllerLayoutGuide type="bottom" id="f0u-4m-pBL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bKn-DB-I27">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xaO-oR-eaT" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view alpha="0.10000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2qB-fU-wDm">
+                                <rect key="frame" x="0.0" y="120" width="10" height="448"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="10" id="amZ-h8-BUB"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2qB-fU-wDm" firstAttribute="top" secondItem="M8C-qE-G9A" secondAttribute="bottom" constant="100" id="NeZ-Qo-E1H"/>
+                            <constraint firstItem="f0u-4m-pBL" firstAttribute="top" secondItem="2qB-fU-wDm" secondAttribute="bottom" id="TAf-a8-fOf"/>
+                            <constraint firstItem="2qB-fU-wDm" firstAttribute="leading" secondItem="bKn-DB-I27" secondAttribute="leading" id="dUG-eE-jYf"/>
+                            <constraint firstItem="xaO-oR-eaT" firstAttribute="leading" secondItem="bKn-DB-I27" secondAttribute="leading" id="fPv-7G-mJg"/>
+                            <constraint firstItem="xaO-oR-eaT" firstAttribute="top" secondItem="bKn-DB-I27" secondAttribute="top" constant="20" id="oC5-vi-kBH"/>
+                            <constraint firstAttribute="trailing" secondItem="xaO-oR-eaT" secondAttribute="trailing" id="rml-I4-QDU"/>
+                            <constraint firstItem="f0u-4m-pBL" firstAttribute="top" secondItem="xaO-oR-eaT" secondAttribute="bottom" id="tlO-4t-jc3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="MapView" destination="xaO-oR-eaT" id="GXY-Xr-KTt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wzo-FF-8n4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-260.625" y="109.85915492957747"/>
+        </scene>
+    </scenes>
+</document>

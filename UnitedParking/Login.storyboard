@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="jm9-Rz-sY1">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="j6o-wm-wGp">
+            <objects>
+                <viewController id="jm9-Rz-sY1" customClass="LoginViewController" customModule="UnitedParking" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1gL-uI-V2H"/>
+                        <viewControllerLayoutGuide type="bottom" id="isQ-5Q-n3T"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xo1-XK-NXI" customClass="L">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TW6-OF-eEZ">
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <subviews>
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sign in" translatesAutoresizingMaskIntoConstraints="NO" id="Q3V-b5-aow">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="n24-nS-QHJ" appends="YES" id="Ddo-FN-JHZ"/>
+                                        </connections>
+                                    </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lvM-MY-4oQ">
+                                        <rect key="frame" x="59" y="231" width="161" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ta-dI-HR2">
+                                        <rect key="frame" x="225" y="296" width="81" height="15"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="ForgotPassClicked:" destination="jm9-Rz-sY1" eventType="touchUpInside" id="NMl-tS-ot9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="Signin" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Wy-Hp-a07">
+                                        <rect key="frame" x="15" y="347" width="291" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="LoginClicked:" destination="jm9-Rz-sY1" eventType="touchUpInside" id="LpS-l7-iGa"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="FBLogin" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="woC-2T-HFh">
+                                        <rect key="frame" x="23" y="397" width="275" height="45"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="LoginClicked:" destination="jm9-Rz-sY1" eventType="touchUpInside" id="OrN-9V-EtO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="TwitterLogin" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ftC-Eo-nCM">
+                                        <rect key="frame" x="23" y="450" width="275" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="LoginClicked:" destination="jm9-Rz-sY1" eventType="touchUpInside" id="x3N-Sj-bVt"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ffe-Pp-yZF">
+                                        <rect key="frame" x="124" y="509" width="74" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </button>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BoJ-Rv-21P">
+                                        <rect key="frame" x="59" y="289" width="161" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Q3V-b5-aow" secondAttribute="trailing" id="5yA-rG-Hbs"/>
+                                    <constraint firstItem="Q3V-b5-aow" firstAttribute="top" secondItem="TW6-OF-eEZ" secondAttribute="top" id="IGv-cB-Ifl"/>
+                                    <constraint firstItem="Q3V-b5-aow" firstAttribute="leading" secondItem="TW6-OF-eEZ" secondAttribute="leading" id="bTx-Gw-VTs"/>
+                                    <constraint firstAttribute="bottom" secondItem="Q3V-b5-aow" secondAttribute="bottom" id="lkV-5U-6mo"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="TW6-OF-eEZ" secondAttribute="trailing" id="0KL-dq-vBH"/>
+                            <constraint firstItem="TW6-OF-eEZ" firstAttribute="top" secondItem="1gL-uI-V2H" secondAttribute="bottom" id="5ij-fw-1kc"/>
+                            <constraint firstItem="isQ-5Q-n3T" firstAttribute="top" secondItem="TW6-OF-eEZ" secondAttribute="bottom" id="Hpy-ZM-cjx"/>
+                            <constraint firstItem="TW6-OF-eEZ" firstAttribute="leading" secondItem="xo1-XK-NXI" secondAttribute="leading" id="vGS-zM-Ily"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="EmailTextField" destination="lvM-MY-4oQ" id="HaS-1L-rWt"/>
+                        <outlet property="PasswordTextField" destination="BoJ-Rv-21P" id="oIV-9l-prL"/>
+                        <segue destination="NG9-Fg-uMY" kind="presentation" identifier="goToHomeScreen" id="UCV-Qx-GFJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vpH-jw-7iS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="n24-nS-QHJ">
+                    <connections>
+                        <action selector="TapTheScreee:" destination="jm9-Rz-sY1" id="fdQ-1f-oTc"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="181.875" y="194.36619718309859"/>
+        </scene>
+        <!--Menu-->
+        <scene sceneID="ucq-4c-toe">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Menu" id="NG9-Fg-uMY" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lSh-w2-rab" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="833" y="194"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Sign in" width="375" height="667"/>
+    </resources>
+</document>

@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		051189E51EBB72FE0094E931 /* RegistryPKView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 051189E41EBB72FE0094E931 /* RegistryPKView.xib */; };
+		051189E71EBB77AE0094E931 /* RegistryPKView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051189E61EBB77AE0094E931 /* RegistryPKView.swift */; };
+		05342FE91EACAEF600ED44F4 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05342FE81EACAEF600ED44F4 /* Client.swift */; };
+		057F207D1EB5B8EB00464BE5 /* Payment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 057F207C1EB5B8EB00464BE5 /* Payment.storyboard */; };
+		05A9FAC61EACEE0100CF4661 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A9FAC51EACEE0100CF4661 /* User.swift */; };
+		05C3A1B01EAF9CC90095F9FE /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05C3A1AF1EAF9CC90095F9FE /* Map.storyboard */; };
+		05C3A1B21EAF9CFD0095F9FE /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C3A1B11EAF9CFD0095F9FE /* MapViewController.swift */; };
+		05CDD9621EB5D52700740261 /* PrePaidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CDD9611EB5D52700740261 /* PrePaidViewController.swift */; };
+		05CDD9641EB5D54C00740261 /* CreditCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CDD9631EB5D54C00740261 /* CreditCardViewController.swift */; };
+		05CDF69F1EB0F53A00D8B281 /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05CDF69E1EB0F53900D8B281 /* Menu.storyboard */; };
+		05CDF6A11EB0F58E00D8B281 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CDF6A01EB0F58E00D8B281 /* MenuViewController.swift */; };
+		05F367801EAB3D9F0035EAA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F3677F1EAB3D9F0035EAA4 /* AppDelegate.swift */; };
+		05F367821EAB3D9F0035EAA4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F367811EAB3D9F0035EAA4 /* ViewController.swift */; };
+		05F367851EAB3D9F0035EAA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05F367831EAB3D9F0035EAA4 /* Main.storyboard */; };
+		05F367871EAB3D9F0035EAA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05F367861EAB3D9F0035EAA4 /* Assets.xcassets */; };
+		05F3678A1EAB3D9F0035EAA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05F367881EAB3D9F0035EAA4 /* LaunchScreen.storyboard */; };
+		05F367921EAB3DC50035EAA4 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05F367911EAB3DC50035EAA4 /* Login.storyboard */; };
+		05F367941EAB3E690035EAA4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F367931EAB3E690035EAA4 /* LoginViewController.swift */; };
+		05F367971EAB5CD80035EAA4 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05F367961EAB5CD80035EAA4 /* Home.storyboard */; };
+		05F367991EAB5F740035EAA4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F367981EAB5F740035EAA4 /* HomeViewController.swift */; };
+		05FBB5AD1EB76E9E00D9C96E /* Reports.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05FBB5AC1EB76E9E00D9C96E /* Reports.storyboard */; };
+		05FBB5AF1EB76EB200D9C96E /* ReportsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FBB5AE1EB76EB200D9C96E /* ReportsViewController.swift */; };
+		05FBB5B31EB8B77000D9C96E /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FBB5B21EB8B76F00D9C96E /* PaymentViewController.swift */; };
+		05FBB5B61EBA22A000D9C96E /* ForPKOwner.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05FBB5B51EBA22A000D9C96E /* ForPKOwner.storyboard */; };
+		05FBB5B81EBA22B200D9C96E /* ForPKOwnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FBB5B71EBA22B200D9C96E /* ForPKOwnerViewController.swift */; };
+		2D8912E93F5B5863886AC16B /* Pods_UnitedParking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAA04F222B48E471D7E0D81A /* Pods_UnitedParking.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		051189E41EBB72FE0094E931 /* RegistryPKView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegistryPKView.xib; sourceTree = "<group>"; };
+		051189E61EBB77AE0094E931 /* RegistryPKView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistryPKView.swift; sourceTree = "<group>"; };
+		05342FE81EACAEF600ED44F4 /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		057F207C1EB5B8EB00464BE5 /* Payment.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Payment.storyboard; sourceTree = "<group>"; };
+		05A9FAC51EACEE0100CF4661 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		05C3A1AF1EAF9CC90095F9FE /* Map.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
+		05C3A1B11EAF9CFD0095F9FE /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		05CDD9611EB5D52700740261 /* PrePaidViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrePaidViewController.swift; sourceTree = "<group>"; };
+		05CDD9631EB5D54C00740261 /* CreditCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditCardViewController.swift; sourceTree = "<group>"; };
+		05CDF69E1EB0F53900D8B281 /* Menu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
+		05CDF6A01EB0F58E00D8B281 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		05F3677C1EAB3D9F0035EAA4 /* UnitedParking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnitedParking.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		05F3677F1EAB3D9F0035EAA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		05F367811EAB3D9F0035EAA4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		05F367841EAB3D9F0035EAA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		05F367861EAB3D9F0035EAA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		05F367891EAB3D9F0035EAA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		05F3678B1EAB3D9F0035EAA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05F367911EAB3DC50035EAA4 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		05F367931EAB3E690035EAA4 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		05F367961EAB5CD80035EAA4 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		05F367981EAB5F740035EAA4 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		05FBB5AC1EB76E9E00D9C96E /* Reports.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Reports.storyboard; sourceTree = "<group>"; };
+		05FBB5AE1EB76EB200D9C96E /* ReportsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportsViewController.swift; sourceTree = "<group>"; };
+		05FBB5B21EB8B76F00D9C96E /* PaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		05FBB5B51EBA22A000D9C96E /* ForPKOwner.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ForPKOwner.storyboard; sourceTree = "<group>"; };
+		05FBB5B71EBA22B200D9C96E /* ForPKOwnerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForPKOwnerViewController.swift; sourceTree = "<group>"; };
+		22B4847FAC221A2E52D12BFC /* Pods-UnitedParking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnitedParking.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UnitedParking/Pods-UnitedParking.debug.xcconfig"; sourceTree = "<group>"; };
+		BAA04F222B48E471D7E0D81A /* Pods_UnitedParking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UnitedParking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF3725ADF1C11F5A3CC2B8A8 /* Pods-UnitedParking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnitedParking.release.xcconfig"; path = "Pods/Target Support Files/Pods-UnitedParking/Pods-UnitedParking.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		05F367791EAB3D9F0035EAA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D8912E93F5B5863886AC16B /* Pods_UnitedParking.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05263DED1EAB929300D0916C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				05FBB5B41EBA226500D9C96E /* ForParkingLotOwner */,
+				05FBB5AB1EB76E8F00D9C96E /* Reports */,
+				057F207B1EB5B8D700464BE5 /* Payment */,
+				05CDF69D1EB0F52700D8B281 /* Menu */,
+				05C3A1AE1EAF9CBD0095F9FE /* Map */,
+				05C3A1AD1EAF9CA40095F9FE /* Home */,
+				05C3A1AC1EAF9C930095F9FE /* Login */,
+				05F367811EAB3D9F0035EAA4 /* ViewController.swift */,
+				05F3677F1EAB3D9F0035EAA4 /* AppDelegate.swift */,
+				05F367831EAB3D9F0035EAA4 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		057F207B1EB5B8D700464BE5 /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+				057F207C1EB5B8EB00464BE5 /* Payment.storyboard */,
+				05FBB5B21EB8B76F00D9C96E /* PaymentViewController.swift */,
+				05CDD9631EB5D54C00740261 /* CreditCardViewController.swift */,
+				05CDD9611EB5D52700740261 /* PrePaidViewController.swift */,
+			);
+			name = Payment;
+			sourceTree = "<group>";
+		};
+		05BE36971EAB919300CA8753 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				05342FE81EACAEF600ED44F4 /* Client.swift */,
+				05A9FAC51EACEE0100CF4661 /* User.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		05C3A1AC1EAF9C930095F9FE /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				05F367911EAB3DC50035EAA4 /* Login.storyboard */,
+				05F367931EAB3E690035EAA4 /* LoginViewController.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		05C3A1AD1EAF9CA40095F9FE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				05F367981EAB5F740035EAA4 /* HomeViewController.swift */,
+				05F367961EAB5CD80035EAA4 /* Home.storyboard */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		05C3A1AE1EAF9CBD0095F9FE /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				05C3A1AF1EAF9CC90095F9FE /* Map.storyboard */,
+				05C3A1B11EAF9CFD0095F9FE /* MapViewController.swift */,
+			);
+			name = Map;
+			sourceTree = "<group>";
+		};
+		05CDF69D1EB0F52700D8B281 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				05CDF69E1EB0F53900D8B281 /* Menu.storyboard */,
+				05CDF6A01EB0F58E00D8B281 /* MenuViewController.swift */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+		05F367731EAB3D9F0035EAA4 = {
+			isa = PBXGroup;
+			children = (
+				05F3677D1EAB3D9F0035EAA4 /* Products */,
+				05F3677E1EAB3D9F0035EAA4 /* UnitedParking */,
+				93F8B98B3DDD20340B733D0B /* Pods */,
+				C9B29FC34A8CE41933B9ABC9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		05F3677D1EAB3D9F0035EAA4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				05F3677C1EAB3D9F0035EAA4 /* UnitedParking.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		05F3677E1EAB3D9F0035EAA4 /* UnitedParking */ = {
+			isa = PBXGroup;
+			children = (
+				05BE36971EAB919300CA8753 /* API */,
+				05263DED1EAB929300D0916C /* View */,
+				05F367861EAB3D9F0035EAA4 /* Assets.xcassets */,
+				05F367881EAB3D9F0035EAA4 /* LaunchScreen.storyboard */,
+				05F3678B1EAB3D9F0035EAA4 /* Info.plist */,
+			);
+			path = UnitedParking;
+			sourceTree = "<group>";
+		};
+		05FBB5AB1EB76E8F00D9C96E /* Reports */ = {
+			isa = PBXGroup;
+			children = (
+				05FBB5AC1EB76E9E00D9C96E /* Reports.storyboard */,
+				05FBB5AE1EB76EB200D9C96E /* ReportsViewController.swift */,
+			);
+			name = Reports;
+			sourceTree = "<group>";
+		};
+		05FBB5B41EBA226500D9C96E /* ForParkingLotOwner */ = {
+			isa = PBXGroup;
+			children = (
+				05FBB5B51EBA22A000D9C96E /* ForPKOwner.storyboard */,
+				05FBB5B71EBA22B200D9C96E /* ForPKOwnerViewController.swift */,
+				051189E41EBB72FE0094E931 /* RegistryPKView.xib */,
+				051189E61EBB77AE0094E931 /* RegistryPKView.swift */,
+			);
+			name = ForParkingLotOwner;
+			sourceTree = "<group>";
+		};
+		93F8B98B3DDD20340B733D0B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				22B4847FAC221A2E52D12BFC /* Pods-UnitedParking.debug.xcconfig */,
+				EF3725ADF1C11F5A3CC2B8A8 /* Pods-UnitedParking.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C9B29FC34A8CE41933B9ABC9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BAA04F222B48E471D7E0D81A /* Pods_UnitedParking.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		05F3677B1EAB3D9F0035EAA4 /* UnitedParking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05F3678E1EAB3D9F0035EAA4 /* Build configuration list for PBXNativeTarget "UnitedParking" */;
+			buildPhases = (
+				B015404895B87C8678FAA44A /* [CP] Check Pods Manifest.lock */,
+				05F367781EAB3D9F0035EAA4 /* Sources */,
+				05F367791EAB3D9F0035EAA4 /* Frameworks */,
+				05F3677A1EAB3D9F0035EAA4 /* Resources */,
+				791C21AB67F56E9A35EE3EC0 /* [CP] Embed Pods Frameworks */,
+				7D2C6560B41B27E8BB3BCD30 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UnitedParking;
+			productName = UnitedParking;
+			productReference = 05F3677C1EAB3D9F0035EAA4 /* UnitedParking.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		05F367741EAB3D9F0035EAA4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Linh Le";
+				TargetAttributes = {
+					05F3677B1EAB3D9F0035EAA4 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 8D5SZ9A5H3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 05F367771EAB3D9F0035EAA4 /* Build configuration list for PBXProject "UnitedParking" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 05F367731EAB3D9F0035EAA4;
+			productRefGroup = 05F3677D1EAB3D9F0035EAA4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				05F3677B1EAB3D9F0035EAA4 /* UnitedParking */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		05F3677A1EAB3D9F0035EAA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05CDF69F1EB0F53A00D8B281 /* Menu.storyboard in Resources */,
+				05FBB5B61EBA22A000D9C96E /* ForPKOwner.storyboard in Resources */,
+				05F367921EAB3DC50035EAA4 /* Login.storyboard in Resources */,
+				05F367971EAB5CD80035EAA4 /* Home.storyboard in Resources */,
+				05F3678A1EAB3D9F0035EAA4 /* LaunchScreen.storyboard in Resources */,
+				05F367871EAB3D9F0035EAA4 /* Assets.xcassets in Resources */,
+				051189E51EBB72FE0094E931 /* RegistryPKView.xib in Resources */,
+				05F367851EAB3D9F0035EAA4 /* Main.storyboard in Resources */,
+				05C3A1B01EAF9CC90095F9FE /* Map.storyboard in Resources */,
+				057F207D1EB5B8EB00464BE5 /* Payment.storyboard in Resources */,
+				05FBB5AD1EB76E9E00D9C96E /* Reports.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		791C21AB67F56E9A35EE3EC0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UnitedParking/Pods-UnitedParking-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D2C6560B41B27E8BB3BCD30 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UnitedParking/Pods-UnitedParking-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B015404895B87C8678FAA44A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		05F367781EAB3D9F0035EAA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05FBB5B81EBA22B200D9C96E /* ForPKOwnerViewController.swift in Sources */,
+				05F367941EAB3E690035EAA4 /* LoginViewController.swift in Sources */,
+				05F367821EAB3D9F0035EAA4 /* ViewController.swift in Sources */,
+				05A9FAC61EACEE0100CF4661 /* User.swift in Sources */,
+				05FBB5B31EB8B77000D9C96E /* PaymentViewController.swift in Sources */,
+				05CDD9641EB5D54C00740261 /* CreditCardViewController.swift in Sources */,
+				05F367801EAB3D9F0035EAA4 /* AppDelegate.swift in Sources */,
+				05342FE91EACAEF600ED44F4 /* Client.swift in Sources */,
+				05FBB5AF1EB76EB200D9C96E /* ReportsViewController.swift in Sources */,
+				05F367991EAB5F740035EAA4 /* HomeViewController.swift in Sources */,
+				05CDD9621EB5D52700740261 /* PrePaidViewController.swift in Sources */,
+				05C3A1B21EAF9CFD0095F9FE /* MapViewController.swift in Sources */,
+				051189E71EBB77AE0094E931 /* RegistryPKView.swift in Sources */,
+				05CDF6A11EB0F58E00D8B281 /* MenuViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		05F367831EAB3D9F0035EAA4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				05F367841EAB3D9F0035EAA4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		05F367881EAB3D9F0035EAA4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				05F367891EAB3D9F0035EAA4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		05F3678C1EAB3D9F0035EAA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		05F3678D1EAB3D9F0035EAA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		05F3678F1EAB3D9F0035EAA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22B4847FAC221A2E52D12BFC /* Pods-UnitedParking.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8D5SZ9A5H3;
+				INFOPLIST_FILE = UnitedParking/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = linken.UnitedParking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		05F367901EAB3D9F0035EAA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF3725ADF1C11F5A3CC2B8A8 /* Pods-UnitedParking.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8D5SZ9A5H3;
+				INFOPLIST_FILE = UnitedParking/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = linken.UnitedParking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		05F367771EAB3D9F0035EAA4 /* Build configuration list for PBXProject "UnitedParking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05F3678C1EAB3D9F0035EAA4 /* Debug */,
+				05F3678D1EAB3D9F0035EAA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05F3678E1EAB3D9F0035EAA4 /* Build configuration list for PBXNativeTarget "UnitedParking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05F3678F1EAB3D9F0035EAA4 /* Debug */,
+				05F367901EAB3D9F0035EAA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 05F367741EAB3D9F0035EAA4 /* Project object */;
+}

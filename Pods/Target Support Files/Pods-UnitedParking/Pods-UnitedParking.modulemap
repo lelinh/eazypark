@@ -1,0 +1,6 @@
+framework module Pods_UnitedParking {
+  umbrella header "Pods-UnitedParking-umbrella.h"
+
+  export *
+  module * { export * }
+}
