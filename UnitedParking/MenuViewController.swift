@@ -28,7 +28,7 @@ class MenuViewController: UIViewController {
         let previousIndex = selectedIndex
         selectedIndex = sender.tag
         
-        if sender.tag == 5{
+        if sender.tag == 6{
             dismiss(animated: true, completion: nil)
             return
         }        
@@ -64,6 +64,9 @@ class MenuViewController: UIViewController {
         if sender.state == UIGestureRecognizerState.began{
             originalLeftMargin = ContentLeftMarginConstraint.constant
         }else if sender.state == UIGestureRecognizerState.changed{
+            if transition.x<0 {
+                return
+            }
             if transition.x > view.frame.size.width - MAX_LEFT_MARGIN {
                 return
             }
@@ -78,7 +81,7 @@ class MenuViewController: UIViewController {
             }
             UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 0.3, initialSpringVelocity: 0.3, options: [], animations: {
                 if velocity.x > 0 {
-                    self.ContentLeftMarginConstraint.constant = self.view.frame.size.width/2// - self.MAX_LEFT_MARGIN
+                    self.ContentLeftMarginConstraint.constant = self.view.frame.size.width/2 + 30// - self.MAX_LEFT_MARGIN
                 }else{
                     self.ContentLeftMarginConstraint.constant = 0
                 }
@@ -128,7 +131,11 @@ extension MenuViewController{
             .instantiateViewController(withIdentifier: "ForPKOwnerViewController")
             as! ForPKOwnerViewController
         
-        viewControllers = [homeVC,paymentVC,mapVC,reportsVC,forPKOwnerVC]
+        let scanQRVC = UIStoryboard(name: "ScanQR", bundle: nil)
+            .instantiateViewController(withIdentifier: "ScanQRViewController")
+            as! ScanQRViewController
+        
+        viewControllers = [homeVC,paymentVC,mapVC,reportsVC,forPKOwnerVC,scanQRVC]
         
         //Add the default ViewController
         let vc = viewControllers[selectedIndex]
@@ -148,7 +155,7 @@ extension MenuViewController{
         user.creditCard = "2345"
     }
     func changeAvatar() {
-        
-        print("change Avatar")
+        let editVC = UIStoryboard(name: "UserEdit", bundle: nil).instantiateViewController(withIdentifier: "UserEditViewController")
+        present(editVC, animated: true, completion: nil)
     }
 }

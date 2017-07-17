@@ -8,6 +8,7 @@
 
 import UIKit
 import Alamofire
+import CoreLocation
 
 class Client: NSObject {
 
@@ -70,6 +71,9 @@ class Client: NSObject {
 
         let user = User(username)
         return user
+    }
+    static func findPK(_ location:CLLocationCoordinate2D){
+        
     }
     
 }

@@ -16,14 +16,30 @@ import CoreLocation
 class RegistryPKView: UIView,CLLocationManagerDelegate{
 
     var locationManager: CLLocationManager!
+    var contentView : UIView?
+    var currentLocation:CLLocationCoordinate2D!
 
     @IBOutlet weak var OwnerTextField: UITextField!
     @IBOutlet weak var AddressTexField: UITextField!
     
+    
+    @IBOutlet weak var MotoCapacityTextField: UITextField!
+    
+    @IBOutlet weak var CarCapacityTextField: UITextField!
+    
+    @IBOutlet weak var MotoFeeTextField: UITextField!
+    
+    @IBOutlet weak var CarFeeOvernightPerNightTextField: UITextField!
+    
+    @IBOutlet weak var CarFeeOvernightPerMonthTextField: UITextField!
+    @IBOutlet weak var CarFeeTextField: UITextField!
+    
     @IBOutlet weak var MapView: GMSMapView!
     
-    var contentView : UIView?
-    var currentLocation:CLLocationCoordinate2D!
+    
+    @IBAction func OutOfServiceClicked(_ sender: UIButton) {
+        print("Out of service")
+    }
     
     
     @IBAction func GetYourLocationButtonClicked(_ sender: UIButton) {
@@ -33,6 +49,7 @@ class RegistryPKView: UIView,CLLocationManagerDelegate{
     
     @IBAction func SubmitButtonClicked(_ sender: UIButton) {
         print("submit")
+        
     }
     
     
@@ -80,17 +97,16 @@ class RegistryPKView: UIView,CLLocationManagerDelegate{
         // Create a GMSCameraPosition that tells the map to display the
         // coordinate -33.86,151.20 at zoom level 12.
         let camera = GMSCameraPosition.camera(withLatitude: User.currentUser.location.latitude, longitude: User.currentUser.location.longitude, zoom: 14.0)
-//        let camera = GMSCameraPosition.camera(withLatitude: -33.86, longitude: 151.205, zoom: 16.0)
         
         MapView.camera = camera
         
         // Creates a marker in the center of the map.
         let marker = GMSMarker()
         marker.position = CLLocationCoordinate2D(latitude: User.currentUser.location.latitude, longitude: User.currentUser.location.longitude)
-//        marker.position = CLLocationCoordinate2D(latitude: -33.86, longitude: 151.205)
         marker.title = AddressTexField.text ?? "Sydney"
         marker.snippet = "Australia"
         marker.map = MapView
     }
 
 }
+

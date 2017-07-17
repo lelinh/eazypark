@@ -28,6 +28,7 @@ class User: NSObject,CLLocationManagerDelegate {
         self.username = username
     }
     static var currentUser = User("linh le")
+    
     func getUserLocation() {
         locationManager = CLLocationManager()
         locationManager.delegate = self

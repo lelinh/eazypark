@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="3GR-1G-UH9">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Details View Controller-->
+        <scene sceneID="tmG-9Y-roW">
+            <objects>
+                <viewController storyboardIdentifier="PKDetailsViewController" id="3GR-1G-UH9" customClass="PKDetailsViewController" customModule="UnitedParking" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mcs-c1-2lE"/>
+                        <viewControllerLayoutGuide type="bottom" id="WN0-HV-ZNr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SGA-Ih-uSe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bm8-26-4sD">
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zeq-bx-xuo" customClass="PKDetailsView" customModule="UnitedParking" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="-20" width="320" height="700"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="700" id="Lh9-18-aFA"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Zeq-bx-xuo" secondAttribute="bottom" id="HUI-IN-cxk"/>
+                                    <constraint firstAttribute="trailing" secondItem="Zeq-bx-xuo" secondAttribute="trailing" id="r8l-Ul-GGi"/>
+                                    <constraint firstItem="Zeq-bx-xuo" firstAttribute="top" secondItem="bm8-26-4sD" secondAttribute="top" constant="-20" id="s4p-jP-vHh"/>
+                                    <constraint firstItem="Zeq-bx-xuo" firstAttribute="leading" secondItem="bm8-26-4sD" secondAttribute="leading" id="uLy-mE-DMU"/>
+                                    <constraint firstItem="Zeq-bx-xuo" firstAttribute="width" secondItem="bm8-26-4sD" secondAttribute="width" id="vMD-tz-y3G"/>
+                                </constraints>
+                            </scrollView>
+                            <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Exf-iv-nqB">
+                                <rect key="frame" x="21" y="30" width="35" height="35"/>
+                                <color key="backgroundColor" red="0.84932185910000002" green="0.84932185910000002" blue="0.84932185910000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="ECk-An-5iO"/>
+                                    <constraint firstAttribute="width" constant="35" id="vPw-Ep-FhX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="25"/>
+                                <state key="normal" title="&lt;"/>
+                                <connections>
+                                    <action selector="BackButtonClicked:" destination="3GR-1G-UH9" eventType="touchUpInside" id="O9o-fk-r0t"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Exf-iv-nqB" firstAttribute="top" secondItem="mcs-c1-2lE" secondAttribute="bottom" constant="10" id="0LT-RS-xM8"/>
+                            <constraint firstItem="bm8-26-4sD" firstAttribute="leading" secondItem="SGA-Ih-uSe" secondAttribute="leading" id="4ch-On-tNM"/>
+                            <constraint firstItem="Exf-iv-nqB" firstAttribute="leading" secondItem="SGA-Ih-uSe" secondAttribute="leadingMargin" constant="5" id="OBr-wp-tOu"/>
+                            <constraint firstItem="WN0-HV-ZNr" firstAttribute="top" secondItem="bm8-26-4sD" secondAttribute="bottom" id="eTJ-JZ-h32"/>
+                            <constraint firstItem="bm8-26-4sD" firstAttribute="top" secondItem="mcs-c1-2lE" secondAttribute="bottom" id="lD8-nX-Oyq"/>
+                            <constraint firstAttribute="trailing" secondItem="bm8-26-4sD" secondAttribute="trailing" id="n2P-GG-JM8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ContentView" destination="Zeq-bx-xuo" id="wzx-b2-FIJ"/>
+                        <outlet property="backButton" destination="Exf-iv-nqB" id="WFr-eu-15D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hnu-am-w2c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-292.5" y="-8.4507042253521121"/>
+        </scene>
+    </scenes>
+</document>
